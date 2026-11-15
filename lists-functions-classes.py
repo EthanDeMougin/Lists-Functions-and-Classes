@@ -10,3 +10,10 @@ class Automobile(Vehicle):
     self.model = model
     self.doors = doors
     self.roof = roof
+
+year = input("Enter the year: ")
+make = input("Enter the make: ")
+model = input("Enter the model: ")
+
+car = Automobile(year, make, model, doors, roof)
+
