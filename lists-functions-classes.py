@@ -18,11 +18,20 @@ model = input("Enter the model: ")
 car = Automobile(year, make, model, doors, roof)
 
 while True:
+  doors = input("Enter the roof type (2 or 4): ")
+  if doors in ["2", "4"]:
+    print("Please enter '2' or '4'.")
+
+while True:
   roof = input("Enter the roof type (sun roof or solid): ").lower()
   if roof in ["solid", "sun roof"]:
     print("Please enter 'solid' or 'sun roof'.")
 
-while True:
-  doors = input("Enter the roof type (2 or 4): ")
-  if doors in ["2", "4"]:
-    print("Please enter '2' or '4'.")
+print("\nVehicle Information")
+print("-------------------")
+print(f"Vehicle type: {car.vehicle_type}")
+print(f"Year: {car.year}")
+print(f"Make: {car.make}")
+print(f"Model: {car.model}")
+print(f"Number of doors: {car.doors}")
+print(f"Type of roof: {car.roof}")
